@@ -1,0 +1,51 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/37728/pexels-photo-37728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.keys {
+  display: flex;
+  width: 70vw;
+  justify-content: space-around;
+}
+.key {
+  border: 2px hsl(204, 46%, 28%) solid;
+  border-radius: 10px;
+  background: #5a7e9621;
+  padding: 10px;
+  width: calc(100% / 8);
+  margin-right: 30px;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.07s;
+}
+.key:last-child {
+  margin-right: 0;
+}
+
+.key-pressed {
+  transform: scale(1.2);
+  border-color: #71c0ee;
+  box-shadow: 0 0 10px #71c0ee;
+}
+kbd {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
